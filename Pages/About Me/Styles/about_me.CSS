@@ -27,6 +27,15 @@ html {
         margin: 0 auto;
     }
 
+    .MAIN_top_banner_background_clip {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        text-align: center;
+
+        margin: -25% auto 0;
+    }
+
     .MAIN_top_banner_foreground {
         position: relative;
         display: block;
@@ -35,6 +44,26 @@ html {
 
         border-radius: 10px;
 
-        margin: -15% auto 5%;
+        margin: -20% auto -15%;
+    }
+}
+
+.HOME_sub_description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+    height: 10rem;
+    width: 60%;
+
+    margin: 20% auto 0;
+    background-color: #ff99a6ff;
+
+    border-radius: 10px;
+
+
+    .HOME_sub_description_text {
+        color: #3d0008ff;
+        font-size: 1.5rem;
     }
 }
