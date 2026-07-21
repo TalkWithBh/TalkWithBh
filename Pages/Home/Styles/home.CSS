@@ -8,13 +8,16 @@ html {
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 32px 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: white;
     background-color: white;
 
     text-align: left;
 
     image-rendering: high-quality;
+
+    z-index: 1;
 
     .header_list {
         display: flex;
@@ -41,6 +44,8 @@ html {
         text-align: center;
 
         margin: 0 auto;
+
+        z-index: -2;
     }
 
     .MAIN_top_banner_background_clip {
@@ -50,6 +55,8 @@ html {
         text-align: center;
 
         margin: -25% auto 0;
+
+        z-index: -2;
     }
 
     .MAIN_top_banner_foreground {
@@ -61,6 +68,8 @@ html {
         border-radius: 10px;
 
         margin: -20% auto -15%;
+
+        z-index: -1;
     }
 }
 
@@ -82,5 +91,82 @@ html {
     .HOME_sub_description_text {
         color: #3d0008ff;
         font-size: 1.5rem;
+    }
+}
+
+.HOME_content_list {
+
+    .HOME_content_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        gap: 2rem;
+
+        margin: 20px auto 0;
+
+        list-style: none;
+
+
+        .HOME_CARD_youtube {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: #FF0000;
+            border-radius: 10px;
+
+            padding: 2rem;
+            width: 16rem;
+
+            justify-content: center;
+
+            font-size: 1.5rem;
+
+            transform: translateY(0);
+            transition: all 0.2s ease-in-out;
+        }
+        .HOME_CARD_youtube:hover {
+            transform: translateY(-20%);
+        }
+        .HOME_CARD_twitch {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: #9147FF;
+            border-radius: 10px;
+
+            padding: 2rem;
+            width: 16rem;
+
+            justify-content: center;
+
+            font-size: 1.5rem;
+
+            transform: translateY(0);
+            transition: all 0.2s ease-in-out;
+        }
+        .HOME_CARD_twitch:hover {
+            transform: translateY(-20%);
+        }
+        .HOME_CARD_discord {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: #5865F2;
+            border-radius: 10px;
+
+            padding: 2rem;
+            width: 16rem;
+
+            justify-content: center;
+
+            font-size: 1.5rem;
+
+            transform: translateY(0);
+            transition: all 0.2s ease-in-out;
+        }
+        .HOME_CARD_discord:hover {
+            transform: translateY(-20%);
+        }
     }
 }

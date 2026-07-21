@@ -8,13 +8,32 @@ html {
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 32px 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: white;
     background-color: white;
 
     text-align: left;
 
     image-rendering: high-quality;
+
+    z-index: 1;
+
+    .header_list {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+
+        width: 80%;
+
+        li {
+            display: inline-block;
+            text-decoration: none;
+            padding: 16px;
+        }
+    }
 }
 
 .MAIN_top_banner {
@@ -25,6 +44,19 @@ html {
         text-align: center;
 
         margin: 0 auto;
+
+        z-index: -2;
+    }
+
+    .MAIN_top_banner_background_clip {
+        position: relative;
+        display: block;
+        max-width: 100%;
+        text-align: center;
+
+        margin: -25% auto 0;
+
+        z-index: -2;
     }
 
     .MAIN_top_banner_foreground {
@@ -35,6 +67,29 @@ html {
 
         border-radius: 10px;
 
-        margin: -15% auto 5%;
+        margin: -20% auto -15%;
+
+        z-index: -1;
+    }
+}
+
+
+.HOME_sub_description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+    height: 10rem;
+    width: 60%;
+
+    margin: 20% auto 0;
+    background-color: #ff99a6ff;
+
+    border-radius: 10px;
+
+
+    .HOME_sub_description_text {
+        color: #3d0008ff;
+        font-size: 1.5rem;
     }
 }
