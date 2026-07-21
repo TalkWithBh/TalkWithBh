@@ -8,13 +8,32 @@ html {
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 32px 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     color: white;
     background-color: white;
 
     text-align: left;
 
     image-rendering: high-quality;
+
+    z-index: 1;
+
+    .header_list {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+
+        width: 80%;
+
+        li {
+            display: inline-block;
+            text-decoration: none;
+            padding: 16px;
+        }
+    }
 }
 
 .MAIN_top_banner {
@@ -25,6 +44,8 @@ html {
         text-align: center;
 
         margin: 0 auto;
+
+        z-index: -2;
     }
 
     .MAIN_top_banner_background_clip {
@@ -34,6 +55,8 @@ html {
         text-align: center;
 
         margin: -25% auto 0;
+
+        z-index: -2;
     }
 
     .MAIN_top_banner_foreground {
@@ -45,8 +68,11 @@ html {
         border-radius: 10px;
 
         margin: -20% auto -15%;
+
+        z-index: -1;
     }
 }
+
 
 .HOME_sub_description {
     display: flex;
