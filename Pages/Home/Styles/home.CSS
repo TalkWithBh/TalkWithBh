@@ -1,172 +1,138 @@
-html {
+html{
     font-family: "Lexend Deca", sans-serif;
     font-optical-sizing: auto;
-    background-color: #ffffff;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    color: white;
-    background-color: white;
+/*
+* {
+    outline: 1px solid red !important;
+}
+ */
 
-    text-align: left;
-
-    image-rendering: high-quality;
-
-    z-index: 1;
-
-    .header_list {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-
-
-        width: 80%;
-
-        li {
-            display: inline-block;
-            text-decoration: none;
-            padding: 16px;
-        }
-    }
+a {
+    text-decoration: none;
 }
 
-.MAIN_top_banner {
-    .MAIN_top_banner_background {
-        position: relative;
-        display: block;
-        max-width: 100%;
-        text-align: center;
-
-        margin: 0 auto;
-
-        z-index: -2;
-    }
-
-    .MAIN_top_banner_background_clip {
-        position: relative;
-        display: block;
-        max-width: 100%;
-        text-align: center;
-
-        margin: -25% auto 0;
-
-        z-index: -2;
-    }
-
-    .MAIN_top_banner_foreground {
-        position: relative;
-        display: block;
-        max-width: 60%;
-        text-align: center;
-
-        border-radius: 10px;
-
-        margin: -20% auto -15%;
-
-        z-index: -1;
-    }
-}
-
-
-.HOME_sub_description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-wrap: wrap;
-    height: 10rem;
-    width: 60%;
-
-    margin: 20% auto 0;
-    background-color: #ff99a6ff;
-
-    border-radius: 10px;
-
-
-    .HOME_sub_description_text {
-        color: #3d0008ff;
-        font-size: 1.5rem;
-    }
+.MAIN_contents {
+    margin-top: -400px;
+    height: 500px;
+    background-color: #3d0008ff;
 }
 
 .HOME_content_list {
+    max-width: 100%;
+    transform: translateY(10rem);
 
     .HOME_content_buttons {
+
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 90%;
         gap: 2rem;
 
         margin: 20px auto 0;
 
         list-style: none;
+    }
+}
 
+.HOME_sub_content_list {
+    max-width: 100%;
+    transform: translateY(10rem);
 
-        .HOME_CARD_youtube {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            background-color: #FF0000;
-            border-radius: 10px;
+    .HOME_sub_content_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        gap: 2rem;
 
-            padding: 2rem;
-            width: 16rem;
+        margin: 20px auto 0;
 
-            justify-content: center;
+        list-style: none;
+    }
+}
 
-            font-size: 1.5rem;
+.HOME_CARD:hover{
+    transform: translateY(-10%);
+}
+.HOME_CARD_ICON:hover {
+    transform: translateY(-10%);
+}
 
-            transform: translateY(0);
-            transition: all 0.2s ease-in-out;
-        }
-        .HOME_CARD_youtube:hover {
-            transform: translateY(-20%);
-        }
-        .HOME_CARD_twitch {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            background-color: #9147FF;
-            border-radius: 10px;
+.HOME_CARD {
 
-            padding: 2rem;
-            width: 16rem;
+    border-radius: 10px;
 
-            justify-content: center;
+    padding: 2rem;
+    width: 22%;
 
-            font-size: 1.5rem;
+    justify-content: center;
 
-            transform: translateY(0);
-            transition: all 0.2s ease-in-out;
-        }
-        .HOME_CARD_twitch:hover {
-            transform: translateY(-20%);
-        }
-        .HOME_CARD_discord {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            background-color: #5865F2;
-            border-radius: 10px;
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
 
-            padding: 2rem;
-            width: 16rem;
+    .HOME_CARD_top_row {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 1rem;
 
-            justify-content: center;
-
-            font-size: 1.5rem;
-
-            transform: translateY(0);
-            transition: all 0.2s ease-in-out;
-        }
-        .HOME_CARD_discord:hover {
-            transform: translateY(-20%);
+        .HOME_subtext {
+            color: white;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: lighter;
         }
     }
+    .HOME_CARD_bottom_row {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        transform: translateY(-1em);
+
+        .HOME_subtext {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.HOME_CARD_ICON {
+    border-radius: 10px;
+
+    padding: 1rem;
+
+
+    justify-content: center;
+
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
+
+    .HOME_CARD_IMAGE {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+#youtube {
+    background-color: #FF0000;
+}
+#twitch {
+    background-color: #9146ff;
+}
+#discord {
+    background-color: #7289DA;
+}
+#instagram {
+    background: linear-gradient(to top right,#d62976,#fa7e1e);
+}
+#bluesky {
+    background-color: #01A5FF;
+}
+#twitter {
+    background-color: #000000;
 }

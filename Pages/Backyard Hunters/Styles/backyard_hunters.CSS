@@ -4,38 +4,6 @@ html {
     background-color: #ffffff;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    color: white;
-    background-color: white;
-
-    text-align: left;
-
-    image-rendering: high-quality;
-
-    z-index: 1;
-
-    .header_list {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-
-
-        width: 80%;
-
-        li {
-            display: inline-block;
-            text-decoration: none;
-            padding: 16px;
-        }
-    }
-}
-
 .MAIN_top_banner {
     .MAIN_top_banner_background {
         position: relative;
