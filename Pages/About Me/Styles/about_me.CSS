@@ -3,11 +3,23 @@ html {
     font-optical-sizing: auto;
 }
 
+/*
+* {
+    outline: 1px solid red !important;
+}
+ */
+
 /* ---------- Main Content ---------- */
 
+.ABOUTME_CONTEXT_BOX {
+    /*
+    outline: 1px solid orange !important;
+    */
+}
+
 .ABOUTME_content_box {
-    margin-top: -400px;
-    height: 800px;
+    margin-top: 0rem;
+    height: 50rem;
     background-color: #3d0008ff;
 }
 
@@ -60,20 +72,25 @@ html {
 }
 
 .ABOUTME_main_image_emoji {
-    width: 70%;
+    width: 20em;
 }
 
 /* ---------- Overview ---------- */
 
+.ABOUTME_overview_content_box {
+    margin-top: -30%;
+}
+
 .ABOUTME_overview_box {
-    margin-top: 0px;
-    height: 800px;
     background-color: #5c3131
 }
 
-.ABOUTME_overview_content {
-    transform: translateY(10rem);
+.ABOUTME_overview_box {
 
+}
+
+.ABOUTME_overview_content {
+    height: 40rem;
     display: flex;
     align-items: center;
     justify-content: center;

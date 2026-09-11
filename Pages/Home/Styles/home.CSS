@@ -14,24 +14,22 @@ a {
 }
 
 .MAIN_contents {
-    margin-top: -400px;
-    height: 500px;
     background-color: #3d0008ff;
+
+    height: 40rem;
 }
 
 .HOME_content_list {
+
     max-width: 100%;
     transform: translateY(10rem);
 
     .HOME_content_buttons {
-
         display: flex;
         align-items: center;
         justify-content: center;
         width: 90%;
         gap: 2rem;
-
-        margin: 20px auto 0;
 
         list-style: none;
     }
@@ -83,7 +81,6 @@ a {
             color: white;
             text-decoration: none;
             font-size: 2rem;
-            font-weight: lighter;
         }
     }
     .HOME_CARD_bottom_row {
@@ -95,6 +92,7 @@ a {
         .HOME_subtext {
             color: white;
             text-decoration: none;
+            font-weight: bolder;
         }
     }
 }
