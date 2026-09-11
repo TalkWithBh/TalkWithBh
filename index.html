@@ -9,51 +9,99 @@
     <meta name="viewport" content="width=device-width" />
 
     <!-- Styles -->
+    <link rel="stylesheet" href="/Universal/Styles/universal_styles.CSS" />
     <link rel="stylesheet" href="Pages/Home/Styles/home.CSS" />
 
     <title>TalkWithBh</title>
 </head>
 <body>
-<!-- Header -->
-<div class="header" id="index_header">
+<!-- Universal Header -->
+
+<div class="UNI_Header" id="index_header">
     <nav>
-        <ul class="header_list">
-            <li><a href="/index.html"><img src="" style="height: 28px"></img></a></li>
-            <li><a href="/index.html">HOME</a></li>
-            <li><a href="/Pages/About%20Me/HTML/about_me.html">ABOUT ME</a></li>
-            <li><a href="/Pages/Lychee%20Diaries/HTML/lychee_diaries.html">LYCHEE DIARIES</a></li>
-            <li><a href="/Pages/Server%20Smackdown/HTML/server_smackdown.html">SERVER SMACKDOWN</a></li>
-            <li><a href="/Pages/Backyard%20Hunters/HTML/backyard_hunters.html">BACKYARD HUNTERS</a></li>
-            <li><a href="/Pages/Day%20Series/HTML/day_series.html">DAY SERIES</a></li>
+        <ul class="UNI_Header_List">
+            <li><a href="/index.html"><img src="/Pages/Assets/Media/Icons/ICON_bh_head.png" style="height: 4em"></img></a></li>
+            <li><a class="UNI_HEADER_Link" href="/index.html">HOME</a></li>
+            <li><a class="UNI_HEADER_Link" href="/Pages/About%20Me/HTML/about_me.html">ABOUT ME</a></li>
+            <li><a class="UNI_HEADER_Link" href="/Pages/Server%20Smackdown/HTML/server_smackdown.html">SERVER SMACKDOWN</a></li>
+            <li><a class="UNI_HEADER_Link" href="/Pages/Backyard%20Hunters/HTML/backyard_hunters.html">BACKYARD HUNTERS</a></li>
+            <li><a class="UNI_HEADER_Link" href="/Pages/Day%20Series/HTML/day_series.html">DAY SERIES</a></li>
         </ul>
     </nav>
 </div>
 
-<div class="MAIN_top_banner" id="MAIN_top_banner">
-    <img class="MAIN_top_banner_background" src="Pages/Home/Media/HOME_main_thumbnail.png" style=" width: 100%; height: auto"/>
-    <img class="MAIN_top_banner_background_clip" src="Pages/Assets/Media/Clips/CLIP_wave.png" style=" width: 100%; height: auto"/>
-    <img class="MAIN_top_banner_foreground" src="Pages/Home/Media/HOME_main_poster.png" style=" width: 80%; height: auto"/>
+<!-- Top Banner -->
+<div class="UNI_Hero">
+    <img class="UNI_hero_background" src="/Pages/Home/Media/HOME_main_thumbnail.png" style=" width: 100%; height: auto"/>
+    <img class="UNI_hero_clip" src="/Pages/Assets/Media/Clips/CLIP_wave.png" style=" width: 100%; height: auto"/>
+    <img class="UNI_hero_poster" src="/Pages/Home/Media/HOME_main_poster.png" style=" width: 80%; height: auto"/>
 </div>
 
-<div class="HOME_sub_description" id="HOME_sub_description">
-    <p class="HOME_sub_description_text">"I think i'm genuinely, the best Lychee on the earth. Probably even the Universe."</p>
+<div class="UNI_disc">
+    <p class="UNI_disc_text">"I am the greatest Lychee on the internet... Probably even in the universe."</p>
 </div>
 
-<div class="HOME_content_list" id="HOME_content_list">
-    <ul class="HOME_content_buttons">
-        <li class="HOME_CARD_youtube">
-            <img src="/Pages/Home/Media/HOME_youtube_icon_white.png" style="width: 50px; height: 50px"/>
-            <a href="https://www.youtube.com/@TalkWithBh">Youtube</a>
-        </li>
-        <li class="HOME_CARD_twitch">
-            <img src="/Pages/Home/Media/HOME_twitch_icon_white.png" style="width: 50px; height: 50px"/>
-            <a href="https://www.twitch.tv/talkwithbh">Twitch</a>
-        </li>
-        <li class="HOME_CARD_discord">
-            <img src="/Pages/Home/Media/HOME_discord_logo_white.png" style="width: 50px; height: 50px"/>
-            <a href="https://discord.com/invite/yvsJUzaB9G">Discord</a>
-        </li>
-    </ul>
+
+
+<!-- Home - Contents -->
+<div class="MAIN_contents">
+    <!-- Bottom Banner -->
+    <div class="UNI_bottom_banner">
+        <img class="MAIN_top_banner_background_clip" src="Pages/Assets/Media/Clips/CLIP_wave_inverted.png" style=" width: 100%; height: auto"/>
+    </div>
+
+    <div class="HOME_content_list">
+        <ul class="HOME_content_buttons">
+            <li class="HOME_CARD" id="youtube">
+                <a class="HOME_CONTENT_LINK" href="https://www.youtube.com/@TalkWithBh">
+                    <div class="HOME_CARD_top_row">
+                        <img src="/Pages/Home/Media/HOME_twitch_icon_white.png" style="width: 50px; height: 50px"/>
+                        <p class="HOME_subtext">Youtube</p>
+                    </div>
+                </a>
+            </li>
+            <li class="HOME_CARD" id="twitch">
+                <a class="HOME_CONTENT_LINK" href="https://www.twitch.tv/talkwithbh">
+                    <div class="HOME_CARD_top_row"><img src="/Pages/Home/Media/HOME_twitch_icon_white.png" style="width: 50px; height: 50px"/>
+                        <p class="HOME_subtext">Twitch</p>
+                    </div>
+                </a>
+            </li>
+            <li class="HOME_CARD" id="discord">
+                <a class="HOME_CONTENT_LINK" href="https://discord.com/invite/yvsJUzaB9G">
+                    <div class="HOME_CARD_top_row"><img src="/Pages/Home/Media/HOME_discord_logo_white.png" style="width: 50px; height: 50px"/>
+                        <p class="HOME_subtext">Discord</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sub Context List -->
+    <div class="HOME_sub_content_list">
+        <ul class="HOME_sub_content_buttons">
+            <li class="HOME_CARD_ICON" id="instagram">
+                <a class="HOME_CONTENT_LINK" href="https://www.instagram.com/talkwithbh/">
+                    <div class="HOME_CARD_IMAGE"><img src="/Pages/Home/Media/HOME_instagram_icon_white.png" style="width: 50px; height: 50px"/>
+                    </div>
+                </a>
+            </li>
+            <li class="HOME_CARD_ICON" id="bluesky">
+                <a class="HOME_CONTENT_LINK" href="https://bsky.app/profile/talkwithbh.bsky.social">
+                    <div class="HOME_CARD_IMAGE">
+                        <img src="/Pages/Home/Media/HOME_bluesky_icon_white.png" style="width: 50px; height: 50px"/>
+                    </div>
+                </a>
+            </li>
+            <li class="HOME_CARD_ICON" id="twitter">
+                <a class="HOME_CONTENT_LINK" href="https://x.com/TalkWithBh">
+                    <div class="HOME_CARD_IMAGE">
+                        <img src="/Pages/Home/Media/HOME_X_icon_white.png" style="width: 50px; height: 50px"/>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
 
 </body>

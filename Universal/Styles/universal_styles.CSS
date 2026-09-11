@@ -1,10 +1,13 @@
 html {
     font-family: "Lexend Deca", sans-serif;
     font-optical-sizing: auto;
-    background-color: #ffffff;
+    background-color: #fff5f8;
+
 }
 
-.header {
+/* ---------- Header ---------- */
+
+.UNI_Header {
     position: sticky;
     top: 0;
     width: 100%;
@@ -12,18 +15,16 @@ html {
     padding-bottom: 16px;
     color: white;
     background-color: white;
-
     text-align: left;
-
     image-rendering: high-quality;
 
     z-index: 1;
 
-    .header_list {
+    .UNI_Header_List {
         display: flex;
         align-items: center;
         text-align: center;
-        justify-content: center;
+        justify-content: left;
 
 
         width: 80%;
@@ -33,11 +34,19 @@ html {
             text-decoration: none;
             padding: 16px;
         }
+
+        .UNI_HEADER_Link {
+            text-decoration: none;
+            color: #3d0008ff;
+            font-size: 1.2em;
+        }
     }
 }
 
-.MAIN_top_banner {
-    .MAIN_top_banner_background {
+/* ---------- Title & Banner ---------- */
+
+.UNI_Hero {
+    .UNI_hero_background {
         position: relative;
         display: block;
         max-width: 100%;
@@ -48,7 +57,7 @@ html {
         z-index: -2;
     }
 
-    .MAIN_top_banner_background_clip {
+    .UNI_hero_clip {
         position: relative;
         display: block;
         max-width: 100%;
@@ -59,7 +68,7 @@ html {
         z-index: -2;
     }
 
-    .MAIN_top_banner_foreground {
+    .UNI_hero_poster {
         position: relative;
         display: block;
         max-width: 60%;
@@ -74,7 +83,7 @@ html {
 }
 
 
-.HOME_sub_description {
+.UNI_disc {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,14 +91,23 @@ html {
     height: 10rem;
     width: 60%;
 
-    margin: 20% auto 0;
-    background-color: #ff99a6ff;
+    margin: 20% auto 0%;
+    background-color: #fbdde7;
 
     border-radius: 10px;
 
-
-    .HOME_sub_description_text {
+    .UNI_disc_text {
         color: #3d0008ff;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
+}
+
+.UNI_bottom_banner {
+    z-index: 1;
+    margin-bottom: -25%;
+}
+
+.UNI_top_banner {
+    z-index: 1;
+    margin-bottom: -1%;
 }
