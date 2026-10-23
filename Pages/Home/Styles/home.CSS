@@ -3,17 +3,13 @@ html{
     font-optical-sizing: auto;
 }
 
-@media (min-width: 600px) {
-    
-}
-
 .grid-container {
     display: grid;
     grid-template-areas:
-            'UNI_Header'
-  'UNI_Hero'
-  'UNI_disc'
-  'MAIN_contents';
+    'UNI_Header'
+    'UNI_Hero'
+    'UNI_disc'
+    'MAIN_contents';
     background-color: transparent;
     gap: 10px;
 }
@@ -24,13 +20,8 @@ html{
 }
  */
 
-a {
-    text-decoration: none;
-}
-
 .MAIN_contents {
     background-color: #3d0008ff;
-
     height: 40rem;
 }
 
