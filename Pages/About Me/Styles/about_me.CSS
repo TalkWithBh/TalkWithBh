@@ -9,6 +9,18 @@ html {
 }
  */
 
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'UNI_Header'
+    'UNI_Hero'
+    'UNI_disc'
+    'MAIN_contents'
+    'HOME_sub_content_list';
+    background-color: transparent;
+    gap: 10px;
+}
+
 /* ---------- Main Content ---------- */
 
 .ABOUTME_CONTEXT_BOX {

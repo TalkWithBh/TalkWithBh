@@ -3,6 +3,21 @@ html{
     font-optical-sizing: auto;
 }
 
+@media (min-width: 600px) {
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            'UNI_Header'
+  'UNI_Hero'
+  'UNI_disc'
+  'MAIN_contents';
+    background-color: transparent;
+    gap: 10px;
+}
+
 /*
 * {
     outline: 1px solid red !important;
@@ -80,7 +95,7 @@ a {
         .HOME_subtext {
             color: white;
             text-decoration: none;
-            font-size: 2rem;
+            font-size: 1em;
         }
     }
     .HOME_CARD_bottom_row {
